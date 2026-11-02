@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Application</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-section">
+            <h2>Login to Your Account</h2>
+
+            <form id="login-form">
+
+                <input
+                    type="email"
+                    id="login-email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="login-password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">Login</button>
+
+                <p id="login-message"></p>
+            </form>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

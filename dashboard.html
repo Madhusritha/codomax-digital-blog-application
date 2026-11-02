@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Application</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="register.html">Register</a>
+            <button id="logout-button" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome, <span id="user-name">Writer</span>!</h2>
+            <p>Welcome to your personal blog dashboard.</p>
+        </section>
+
+        <section class="create-section">
+            <h2>My Dashboard</h2>
+
+            <h3>Total Blog Posts:
+                <span id="blog-count">0</span>
+            </h3>
+
+            <br>
+
+            <a href="index.html#create">
+                <button type="button">Create New Blog</button>
+            </a>
+        </section>
+
+        <section class="blogs-section">
+            <h2>My Published Blogs</h2>
+
+            <div id="dashboard-blog-list"></div>
+
+            <p id="dashboard-empty">
+                You haven't published any blogs yet.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>My Blog Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

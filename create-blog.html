@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog - My Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog Application</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="create-blog.html">Create Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-section">
+
+            <h2>Create a New Blog</h2>
+
+            <form id="create-blog-form">
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter blog title"
+                    maxlength="100"
+                    required
+                >
+
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Education">Education</option>
+                    <option value="Student Life">Student Life</option>
+                    <option value="Career">Career</option>
+                    <option value="Personal Growth">Personal Growth</option>
+                </select>
+
+                <textarea
+                    id="content"
+                    placeholder="Write your blog content here..."
+                    required
+                ></textarea>
+
+                <button type="submit">Publish Blog</button>
+
+                <p id="blog-message"></p>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>My Blog Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

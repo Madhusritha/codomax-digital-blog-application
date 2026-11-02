@@ -1,0 +1,298 @@
+/* GENERAL RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F9F1ED;
+    color: #493b3b;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: #FFFFFF;
+    color: #654b50;
+    padding: 22px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee2df;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #76575d;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #b46f7e;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    background: #E8C8CE;
+    padding: 45px 20px;
+    border-radius: 14px;
+    margin-bottom: 28px;
+}
+
+.hero h2 {
+    color: #76545b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #806d6d;
+}
+
+/* CONTENT SECTIONS */
+
+.create-section,
+.blogs-section {
+    background: #ffffff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    border: 1px solid #eee4e1;
+    box-shadow: 0 4px 15px rgba(90, 60, 60, 0.05);
+}
+
+h2 {
+    color: #76545b;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #76545b;
+    margin-bottom: 10px;
+}
+
+/* FORMS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #e5d6d3;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fffdfc;
+    color: #493b3b;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #bd8993;
+    box-shadow: 0 0 0 3px rgba(189, 137, 147, 0.12);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* BUTTONS */
+
+button {
+    background: #A94F69;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #873D55;
+}
+
+#create-blog-form button {
+    width: fit-content;
+}
+
+/* BLOG CARDS */
+
+#blog-list article,
+#dashboard-blog-list article {
+    background: #fffdfc;
+    border: 1px solid #eee2df;
+    padding: 22px;
+    margin-top: 18px;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+#blog-list article h3,
+#dashboard-blog-list article h3 {
+    color: #a96e7b;
+    margin-bottom: 10px;
+}
+
+#blog-list article p,
+#dashboard-blog-list article p {
+    margin-bottom: 12px;
+}
+
+/* EDIT AND DELETE BUTTONS */
+
+#dashboard-blog-list article button {
+    margin: 8px 8px 0 0;
+}
+
+#dashboard-blog-list article button:first-of-type {
+    background: #a96e7b;
+}
+
+#dashboard-blog-list article button:last-of-type {
+    background: #713B4A;
+}
+
+#dashboard-blog-list article button:hover {
+    opacity: 0.85;
+}
+
+/* MESSAGES */
+
+#message,
+#login-message,
+#blog-message {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* LINKS */
+
+a {
+    color: #a96e7b;
+}
+
+a:hover {
+    color: #76545b;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #76545b;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 22px auto;
+        padding: 0 14px;
+    }
+
+    .hero {
+        padding: 32px 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .create-section,
+    .blogs-section {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 18px 10px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .create-section,
+    .blogs-section {
+        padding: 16px;
+    }
+
+    button {
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+
+    #create-blog-form button {
+        width: 100%;
+    }
+}
